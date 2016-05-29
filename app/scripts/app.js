@@ -90,7 +90,18 @@ angular
             data: {
                 title: 'Range Picker API',
             }            
-    });
+    }).state('calender-demo', {
+            url: '/calender-demo',  
+            templateUrl: 'views/calender-demo.html',
+            controller: 'MainCtrl',
+            controllerAs : 'vm',
+            data: {
+                title: 'Calender Picker API',
+            }            
+    })
+
+
+    ;
    
 
 

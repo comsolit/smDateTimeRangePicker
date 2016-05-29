@@ -1,33 +1,37 @@
+/*                +'    <button type="button" id="test" aria-label="show item" class="md-icon-button" ng-click="show()">'
+                +'        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M5 8l4 4 4-4z"/></svg>'
+                +'    </button>' */                               
+
 function DateTimePicker($mdUtil,$mdMedia,$document,picker){
     return {
       restrict : 'E',
       replace:true,
       scope :{
-        value: '=',
-        startDate : '@',
-        weekStartDay : '@',
-        startView:"@",                  
-        mode : '@',
-        format : '@',
-        minDate : '@',
-        maxDate : '@',
-        fname : "@",
-        lable : "@",
-        isRequired : '@',
-        disable : '=',
-        form : '=',
-	    closeOnSelect:"@"
+       value: '=',
+       startDate : '@',
+       weekStartDay : '@',
+       startView:"@",                  
+       mode : '@',
+       format : '@',
+       minDate : '@',
+       maxDate : '@',
+       fname : "@",
+       lable : "@",
+       isRequired : '@',
+       disable : '=',
+       form : '=',
+	     closeOnSelect:"@"
       },
       template: '  <md-input-container md-no-float>'
                 +'    <label for="{{fname}}" >{{lable }}</label>'
                 +'    <input name="{{fname}}" ng-model="value" '
                 +'             type="text" placeholde="{{lable}}"'
-                +'             aria-label="{{fname}}" ng-focus="show()" data-ng-required="isRequired" ng-disabled="disable"'
+                +'             aria-label="{{fname}}"  data-ng-required="isRequired" ng-focus="show()"  ng-disabled="disable"'
                 +'              server-error class="sm-input-container">'
                 +'    <div ng-messages="form[fname].$error" ng-if="form[fname].$touched">'
                 +'    		<div ng-messages-include="{{ngMassagedTempaltePath}}"></div>'
                 +'    </div>'
-                +'    	<div id="picker" class="sm-calender-pane md-whiteframe-15dp">'
+                +'    <div id="picker" class="sm-calender-pane md-whiteframe-15dp">'
                 +'     		<sm-date-picker '
                 +'              id="{{fname}}Picker" '  
                 +'              ng-model="value" '
@@ -40,7 +44,7 @@ function DateTimePicker($mdUtil,$mdMedia,$document,picker){
                 +'              data-format="{{format}}"  '
                 +'          	data-week-start-day="{{weekStartDay}}" > '
                 +'			</sm-date-picker>'
-                +'    	</div>'                
+                +'    </div>'                
                 +'  </md-input-container>',
       link :  function(scope,$element,attr){
         
@@ -76,6 +80,7 @@ function DateTimePicker($mdUtil,$mdMedia,$document,picker){
 
         // show calender 
         scope.show= function(){
+
           var elementRect = inputPane.getBoundingClientRect();
           var bodyRect = document.body.getBoundingClientRect();
 
@@ -112,7 +117,7 @@ function DateTimePicker($mdUtil,$mdMedia,$document,picker){
 
         function hideElement(){
             cElement.addClass('hide-animate');
-        	cElement.removeClass('show');
+        	  cElement.removeClass('show');
             $mdUtil.enableScrolling();
 
         }

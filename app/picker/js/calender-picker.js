@@ -47,6 +47,14 @@ function DatePickerDir($timeout,picker,$mdMedia,$window){
 				}					
 			}
 
+			scope.dateSelected = function(date){
+				console.log(date);
+			}
+
+			scope.timeSelected = function(time){
+
+			}			
+
 			scope.$on('calender:date-selected',function(){
 				if(scope.closeOnSelect && (scope.mode!=='date-time' || scope.mode!=='time')){
 					var date = moment(scope.selectedDate,scope.format);

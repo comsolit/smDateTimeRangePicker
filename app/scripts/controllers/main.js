@@ -97,6 +97,7 @@
         vm.save = function(){
           console.log(vm.employee);
         }
+
         
     }
 

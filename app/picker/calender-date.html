@@ -34,6 +34,7 @@
 					<div layout="row" ng-repeat="w in vm.dateCells" >
 						<md-button
 							ng-repeat="d in w"
+							auto-focus
 							aria-label="vm.currentDate"
 							class="md-icon-button"
 							ng-click="vm.selectDate(d.date,d.isDisabledDate)"

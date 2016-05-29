@@ -62,6 +62,23 @@
         });
 
 
+        sections.push({
+          name: 'Calender',
+          type: 'toggle',
+          iconp: 'timeline',
+          pages: [{
+            name: 'TODO',
+            type: 'link',
+            state: 'calender-demo'
+          }/*,{
+            name: 'API',
+            type: 'link',
+            state: 'range-picker-api'
+          }*/]
+          
+        });        
+
+
         var self;
 
         return self = {

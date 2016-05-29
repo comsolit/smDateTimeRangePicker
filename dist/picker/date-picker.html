@@ -5,9 +5,8 @@
 				<span class="date-time-header" layout="row" layout-xs="row">{{currentDate.format(headerDispalyFormat)}}</span>
 		</md-toolbar>
 		<div layout="column" class="picker-container" >
-			<div ng-show="view==='DATE'" >
-				<sm-calender 
-					ng-model="selectedDate"
+			<sm-calender
+					ng-show="view==='DATE'" 
 					initial-date="initialDate"					
 					id="{{fname}}Picker" 
 					data-mode="{{mode}}" 
@@ -15,15 +14,14 @@
 					data-max-date="maxDate" 
 					close-on-select="{{closeOnSelect}}"				 
 					data-format="{{format}}"  
-					data-week-start-day="{{weekStartDay}}">
-				</sm-calender>
-			</div>
-			<div ng-show="view==='HOUR'">
-				<sm-time
-					ng-model="selectedTime"
+					data-week-start-day="{{weekStartDay}}"
+					date-select-call="dateSelected(date)">
+			</sm-calender>
+			<sm-time
+					ng-show="view==='HOUR'"
+					time-select-call="timeSelected(time)"					
 					data-format="HH:mm">
-				</sm-time>
-			</div>		
+			</sm-time>	
 			<div layout="row" ng-hide="closeOnSelect && (mode!=='date-time' || mode!=='time')">
 					<div ng-show="mode==='date-time'">
 						<md-button class="md-icon-button" ng-show="view==='DATE'" ng-click="view='HOUR'">
