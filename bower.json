@@ -1,9 +1,10 @@
 {
-  "name": "smDateTimeRangePicker",
-  "version": "1.5.4",
-  "homepage": "https://github.com/mominsamir/smDateTimeRangePicker",
+  "name": "comsolit-date-time-range-picker",
+  "version": "1.5.6",
+  "homepage": "https://github.com/comsolit/smDateTimeRangePicker",
   "authors": [
-    "mominsamir"
+    "mominsamir",
+    "comsolit AG"
   ],
   "description": "Material Design date/time/Range pickers built with Angular Material and Moment.js",
   "main": [

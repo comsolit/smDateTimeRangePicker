@@ -168,11 +168,9 @@
       width: 20px;
       font-size: 13px;
       padding: 2px; }
-  .range-picker .pre-select {
-    height: 307px; }
-    .range-picker .pre-select .md-button {
-      padding: 3px;
-      margin: 0; }
+  .range-picker .pre-select .md-button {
+    padding: 3px;
+    margin: 0; }
   .range-picker .custom-select {
     /* 		height: 390px;
 		overflow: hidden; */ }
@@ -491,11 +489,9 @@
       width: 20px;
       font-size: 13px;
       padding: 2px; }
-  .range-picker .pre-select {
-    height: 307px; }
-    .range-picker .pre-select .md-button {
-      padding: 3px;
-      margin: 0; }
+  .range-picker .pre-select .md-button {
+    padding: 3px;
+    margin: 0; }
   .range-picker .custom-select {
     /* 		height: 390px;
 		overflow: hidden; */ }
