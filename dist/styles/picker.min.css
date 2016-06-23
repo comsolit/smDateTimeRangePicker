@@ -1352,14 +1352,6 @@ md-sidenav {
     .sm-clock .sm-clock-hand.sm-clock-hand-11 {
       transform: rotate(180deg); }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Roboto', sans-serif; }
-
-.body-bg {
-  background: #e2e0e0; }
-
 .md-sidenav-left {
   height: 100vh;
   min-height: 100vh;
@@ -1397,41 +1389,6 @@ md-sidenav {
 
 .material-icons.md-48 {
   font-size: 48px; }
-
-p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  letter-spacing: 0.010em;
-  line-height: 1.6em;
-  margin: 0.8em 0 1.6em; }
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  outline: none; }
-  table td, table th {
-    padding: 3px;
-    margin: 0; }
-  table th {
-    font-size: 14px;
-    font-weight: 500;
-    color: #757575;
-    cursor: pointer;
-    height: 54px;
-    white-space: nowrap;
-    position: relative;
-    border-bottom: solid 1px rbga(0, 0, 0, 1);
-    text-align: left; }
-  table td {
-    padding-left: 5px;
-    padding-right: 5px;
-    height: 28px;
-    font-size: 15px;
-    color: #212121;
-    border-bottom: solid 1px rbga(0, 0, 0, 1); }
-  table td:first-child, table th:first-child {
-    padding: 0 0 0 24px; }
 
 code p {
   font-family: Consolas, Courier New, monospace;
